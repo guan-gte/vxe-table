@@ -342,6 +342,7 @@ export default defineComponent({
     const changeAllEvent = () => {
       const $grid = xGrid.value
       $grid.setAllCheckboxRow(demo1.isAllChecked)
+      demo1.isIndeterminate = $grid.isAllCheckboxIndeterminate()
       demo1.selectRecords = $grid.getCheckboxRecords()
     }
 
